@@ -1,0 +1,50 @@
+.container{
+    width: 600px;
+    height: 400;
+    background-color: rgba(187, 115, 255, 0.952);
+    outline: solid black 2px;
+    display: flex;
+    flex-direction:row; 
+    flex-wrap: wrap;
+    box-sizing: wrap;
+     /* justify-content: space-evenly; */
+    
+}
+
+.item{
+     width: 100px;
+    /* height: 100px; */
+    /* flex-grow: 1; */
+    border: solid black 1px;
+    padding-left: 30px;
+    padding-top: 300px;
+    box-sizing: border-box ;
+}
+
+/*pseudoselectores*/
+/* selectores para casos especificos*/
+.container .item:first-child{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+   /* flex-grow: 0 por defecto */
+   flex-grow: 1;
+}
+
+.container .item:last-child{
+    background-color: black;
+    color: rgb(255, 255, 255);  
+    flex-grow: 1.4 ;
+    
+}
+.container .item:nth-child(2){
+    background-color: rgb(8, 0, 0);
+    color: rgb(255, 255, 255);  
+    flex-grow: 0.5;
+    
+}
+
+.container .item:nth-child(3){
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);  
+    flex-grow: 0.7;
+}       
